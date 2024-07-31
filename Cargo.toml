@@ -3,7 +3,8 @@
 #   https://doc.rust-lang.org/cargo/reference/resolver.html#feature-resolver-version-2
 resolver = "2"
 
-members = ["crates/blockifier", "crates/native_blockifier"]
+# members = ["crates/blockifier", "crates/native_blockifier"]
+members = ["crates/blockifier"]
 
 [workspace.package]
 version = "0.8.0-rc.1"
@@ -24,7 +25,14 @@ cairo-lang-casm = "2.7.0-rc.3"
 cairo-lang-runner = "2.7.0-rc.3"
 cairo-lang-starknet-classes = "2.7.0-rc.3"
 cairo-lang-utils = "2.7.0-rc.3"
-cairo-vm = "1.0.0-rc5"
+# cairo-vm = "1.0.0-rc5"
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "37ea72977dccbc2b90b8b7534c1edabd2e2fef79" }
+# 1.0.0-rc5
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "309c8a7d3cdfd0bb766b4888be66ec4b482ecaf4" }
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "681d35a6ce0d404a00ec5ba05029514c8a3c53c8" }
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", branch = "main" }
+# wasm32-rev5
+cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "83ca53382cd022aa1cbb2dd9a447bdfc8eeee0cd" }
 criterion = "0.3"
 derive_more = "0.99.17"
 glob = "0.3.1"
@@ -68,3 +76,11 @@ warnings = "deny"
 
 [workspace.lints.clippy]
 as_conversions = "deny"
+
+[patch.crates-io]
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "309c8a7d3cdfd0bb766b4888be66ec4b482ecaf4" }
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "681d35a6ce0d404a00ec5ba05029514c8a3c53c8" }
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", branch = "main" }
+
+# wasm32-rev5
+cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "83ca53382cd022aa1cbb2dd9a447bdfc8eeee0cd" }
