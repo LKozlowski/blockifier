@@ -21,10 +21,10 @@ ark-secp256k1 = "0.4.0"
 ark-secp256r1 = "0.4.0"
 assert_matches = "1.5.0"
 cached = "0.44.0"
-cairo-lang-casm = "2.7.0-rc.3"
-cairo-lang-runner = "2.7.0-rc.3"
-cairo-lang-starknet-classes = "2.7.0-rc.3"
-cairo-lang-utils = "2.7.0-rc.3"
+cairo-lang-casm = { git = "https://github.com/LKozlowski/cairo", rev = "84f9bc38f2d6930c763ad5046f1671c3618f3fa0" }
+cairo-lang-runner = { git = "https://github.com/LKozlowski/cairo", rev = "84f9bc38f2d6930c763ad5046f1671c3618f3fa0" }
+cairo-lang-starknet-classes = { git = "https://github.com/LKozlowski/cairo", rev = "84f9bc38f2d6930c763ad5046f1671c3618f3fa0" }
+cairo-lang-utils = { git = "https://github.com/LKozlowski/cairo", rev = "84f9bc38f2d6930c763ad5046f1671c3618f3fa0" }
 # cairo-vm = "1.0.0-rc5"
 # cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "37ea72977dccbc2b90b8b7534c1edabd2e2fef79" }
 # 1.0.0-rc5
@@ -33,6 +33,8 @@ cairo-lang-utils = "2.7.0-rc.3"
 # cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", branch = "main" }
 # wasm32-rev5
 cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "83ca53382cd022aa1cbb2dd9a447bdfc8eeee0cd" }
+# wasm32-rev6
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "e3e59db69e31bd13dc4acdab83d6667345d15db5" }
 criterion = "0.3"
 derive_more = "0.99.17"
 glob = "0.3.1"
@@ -78,9 +80,7 @@ warnings = "deny"
 as_conversions = "deny"
 
 [patch.crates-io]
-# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "309c8a7d3cdfd0bb766b4888be66ec4b482ecaf4" }
-# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "681d35a6ce0d404a00ec5ba05029514c8a3c53c8" }
-# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", branch = "main" }
-
 # wasm32-rev5
 cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "83ca53382cd022aa1cbb2dd9a447bdfc8eeee0cd" }
+# wasm32-rev6
+# cairo-vm = { git = "https://github.com/LKozlowski/cairo-vm/", rev = "e3e59db69e31bd13dc4acdab83d6667345d15db5" }
